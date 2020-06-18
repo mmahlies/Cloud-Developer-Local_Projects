@@ -11,7 +11,7 @@ export const config = {
     "database": process.env.udagram_database,
     "host": process.env.udagram_host,
     "dialect": "postgres",
-    "aws_region": "eu-central-1",
+    "aws_region": "eu-central-1", 
     "aws_profile": "DEPLOYED",
     "aws_media_bucket": "udagram-talaat-dev"
   },
