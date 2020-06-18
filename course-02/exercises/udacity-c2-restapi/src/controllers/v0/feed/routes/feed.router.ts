@@ -5,7 +5,7 @@ import * as AWS from '../../../../aws';
 
 const router: Router = Router();
 
-// Get all feed items
+/// Get all feed items
 router.get('/', async (req: Request, res: Response) => {
     const items = await FeedItem.findAndCountAll({order: [['id', 'DESC']]});
     items.rows.map((item) => {
